@@ -20,4 +20,14 @@ const BannerButton = styled.button`
   }
 `
 
-export { BannerButton }
+const SectionButton = styled(BannerButton)`
+  color: ${styles.colors.mainBlack};
+  ${styles.border({ color: `${styles.colors.mainBlack}` })};
+
+  &:hover {
+    color: ${styles.colors.mainYellow};
+    background: ${styles.colors.mainBlack};
+  }
+`
+
+export { BannerButton, SectionButton }
