@@ -24,9 +24,17 @@ const SectionButton = styled(BannerButton)`
   color: ${styles.colors.mainBlack};
   ${styles.border({ color: `${styles.colors.mainBlack}` })};
 
+  a {
+    color: ${styles.colors.mainBlack};
+  }
+
   &:hover {
     color: ${styles.colors.mainYellow};
     background: ${styles.colors.mainBlack};
+
+    a {
+      color: ${styles.colors.mainYellow};
+    }
   }
 `
 

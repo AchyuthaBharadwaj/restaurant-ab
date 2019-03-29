@@ -19,11 +19,7 @@ export default class QuickInfo extends Component {
             molestiae ipsa?
           </p>
           <SectionButton style={{ margin: "2rem auto" }}>
-            <Link
-              to="/about/"
-              style={{ textDecoration: "none" }}
-              className="sectionButonLink"
-            >
+            <Link to="/about/" style={{ textDecoration: "none" }}>
               about
             </Link>
           </SectionButton>
@@ -40,12 +36,6 @@ const QuickInfoWrapper = styled.div`
     line-height: 2rem;
     color: ${styles.colors.mainGrey};
     word-spacing: 0.2rem;
-  }
-  .sectionButonLink {
-    color: ${styles.colors.mainBlack};
-    &:hover {
-      color: ${styles.colors.mainYellow};
-    }
   }
 
   @media (min-width: 768px) {
