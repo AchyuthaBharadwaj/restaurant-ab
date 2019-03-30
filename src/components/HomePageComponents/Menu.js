@@ -39,6 +39,11 @@ export default function Menu() {
           }}
         />
       </ProductList>
+      <SectionButton style={{ margin: "2rem auto" }}>
+        <Link to="/menu/" style={{ textDecoration: "none" }}>
+          menu
+        </Link>
+      </SectionButton>
     </Section>
   )
 }

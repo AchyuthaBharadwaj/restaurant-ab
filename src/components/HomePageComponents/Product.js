@@ -22,11 +22,9 @@ export default function Product({ product }) {
 }
 
 const ProductWrapper = styled.div`
-  @media (min-width: 576px) {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-column-gap: 1rem;
-  }
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 1rem;
 
   .img {
     border-radius: 0.5rem;
@@ -44,6 +42,9 @@ const ProductWrapper = styled.div`
   .price {
     color: ${styles.colors.mainYellow};
     margin-top: 0.5rem;
+    &:before {
+      content: "$";
+    }
   }
   .info {
     margin-top: 0.5rem;

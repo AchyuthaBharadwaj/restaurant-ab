@@ -13,10 +13,19 @@ const BannerButton = styled.button`
   ${styles.border({ color: `${styles.colors.mainWhite}` })};
   margin-bottom: 1rem;
   ${styles.transObject({})};
+
+  a {
+    color: ${styles.colors.mainWhite};
+  }
+
   &:hover {
     color: ${styles.colors.mainBlack};
     background: ${styles.colors.mainWhite};
     cursor: pointer;
+
+    a {
+      color: ${styles.colors.mainBlack};
+    }
   }
 `
 
